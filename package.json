@@ -1,0 +1,54 @@
+{
+  "name": "@kldit/mvc",
+  "version": "0.1.0",
+  "description": "Another MVC Framework powered by koa",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kldit/mvc.git"
+  },
+  "author": "Orlando Leite <orlando@webdefault.com.br>",
+  "license": "GPL-2.0",
+  "bugs": {
+    "url": "https://github.com/kldit/mvc/issues"
+  },
+  "homepage": "https://github.com/kldit/mvc#readme",
+  "devDependencies": {
+    "jest": "^23.5.0"
+  },
+  "directories": {
+    "lib": "lib"
+  },
+  "keywords": [
+    "mvc",
+    "framework"
+  ],
+  "dependencies": {
+    "@kldit/util-boolean-parse": "^1.0.0",
+    "@kldit/util-clean-special-chars": "^1.0.1",
+    "@kldit/util-first-char-case": "^1.0.3",
+    "@kldit/util-is-string": "^1.0.1",
+    "@kldit/util-object-clone": "^1.0.0",
+    "@kldit/util-slug-to-capitalized": "^1.0.0",
+    "@kldit/util-slugify": "^1.0.1",
+    "app-module-path": "^2.2.0",
+    "date-and-time": "^0.6.2",
+    "dotenv": "^6.1.0",
+    "ejs": "^2.6.1",
+    "ext-mysql": "^1.0.5",
+    "glob": "^7.1.3",
+    "glob-promise": "^3.4.0",
+    "koa": "^2.5.3",
+    "koa-body": "^4.0.4",
+    "koa-compress": "^3.0.0",
+    "koa-mount": "^4.0.0",
+    "koa-response-time": "^2.0.0",
+    "koa-session": "^5.9.0",
+    "koa-static": "^5.0.0",
+    "mql-mysql": "^1.0.21",
+    "zlib": "^1.0.5"
+  }
+}
