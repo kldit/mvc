@@ -58,6 +58,12 @@ typings/
 # dotenv environment variables file
 .env
 
+# system files
+*/.DS_Store
+.DS_Store
+*/thumb.db
+thumb.db
+
 # next.js build output
 .next
 
