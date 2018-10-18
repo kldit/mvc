@@ -1,6 +1,6 @@
 {
   "name": "@kldit/mvc",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Another MVC Framework powered by koa",
   "main": "index.js",
   "scripts": {
