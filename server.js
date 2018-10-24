@@ -52,9 +52,7 @@ else
 
             const server = app.listen(3000);
 
-            const mount = require('koa-mount');
-            app.use(mount("/storage", require('koa-static')("storage")));
-            app.use(mount("/static", require('koa-static')("static")));
+            theApp.init( app );
 
             // SET APP ADDRESS
             var HOSTNAME, PATH_NAME;
@@ -144,7 +142,6 @@ else
                 }
             });
 
-            theApp.init();
             if(CLUSTER_BOOL)
             {
                 theApp.loadServices(false);

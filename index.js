@@ -34,12 +34,11 @@ if(CLUSTER_BOOL)
 
 class Application
 {
-    init()
+    init( server )
     {
         this.apps = {};
-        console.log( BASE_PATH + 'base' );
-        this.setDefaultApp('base', BASE_PATH + 'base');
         this.services = {};
+        this.setDefaultApp('base', BASE_PATH + 'base');
     }
 
     loadServices(master)
