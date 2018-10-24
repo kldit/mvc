@@ -1,31 +1,37 @@
 {
-  "name": "@kldit/mvc",
-  "version": "0.1.1",
-  "description": "Another MVC Framework powered by koa",
-  "main": "index.js",
-  "scripts": {
-    "test": "jest"
+  "_from": "@kldit/mvc",
+  "_id": "@kldit/mvc@0.1.1",
+  "_inBundle": false,
+  "_integrity": "sha512-yXwSxZJZobVyao+eQR63Wzb6p/dFkheYOxCLxJMC3GQ0QS4twuxOVyX1oVIxOVVyrV7rDQDIGKTYQ0uryUXpYQ==",
+  "_location": "/@kldit/mvc",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "tag",
+    "registry": true,
+    "raw": "@kldit/mvc",
+    "name": "@kldit/mvc",
+    "escapedName": "@kldit%2fmvc",
+    "scope": "@kldit",
+    "rawSpec": "",
+    "saveSpec": null,
+    "fetchSpec": "latest"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/kldit/mvc.git"
+  "_requiredBy": [
+    "#USER",
+    "/"
+  ],
+  "_resolved": "https://registry.npmjs.org/@kldit/mvc/-/mvc-0.1.1.tgz",
+  "_shasum": "8b9a2524a7bb53fcb11e020af2fe177d8f71a796",
+  "_spec": "@kldit/mvc",
+  "_where": "/Users/orlandoleite/Sites/mvc-test",
+  "author": {
+    "name": "Orlando Leite",
+    "email": "orlando@webdefault.com.br"
   },
-  "author": "Orlando Leite <orlando@webdefault.com.br>",
-  "license": "GPL-2.0",
   "bugs": {
     "url": "https://github.com/kldit/mvc/issues"
   },
-  "homepage": "https://github.com/kldit/mvc#readme",
-  "devDependencies": {
-    "jest": "^23.5.0"
-  },
-  "directories": {
-    "lib": "lib"
-  },
-  "keywords": [
-    "mvc",
-    "framework"
-  ],
+  "bundleDependencies": false,
   "dependencies": {
     "@kldit/util-boolean-parse": "^1.0.0",
     "@kldit/util-clean-special-chars": "^1.0.1",
@@ -49,5 +55,29 @@
     "koa-static": "^5.0.0",
     "mql-mysql": "^1.0.21",
     "zlib": "^1.0.5"
-  }
+  },
+  "deprecated": false,
+  "description": "Another MVC Framework powered by koa",
+  "devDependencies": {
+    "jest": "^23.5.0"
+  },
+  "directories": {
+    "lib": "lib"
+  },
+  "homepage": "https://github.com/kldit/mvc#readme",
+  "keywords": [
+    "mvc",
+    "framework"
+  ],
+  "license": "GPL-2.0",
+  "main": "index.js",
+  "name": "@kldit/mvc",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kldit/mvc.git"
+  },
+  "scripts": {
+    "test": "jest"
+  },
+  "version": "0.1.2"
 }

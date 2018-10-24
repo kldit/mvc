@@ -1,13 +1,11 @@
-const mvc = require.main.require( './lib/mvc' );
-
-module.exports = 
+const mvc = require( '@kldit/mvc' );
 
 /**
  * @author Orlando Leite
  *
  * Error404 class
  */
-class Error extends mvc.BaseController
+module.exports = class Error extends mvc.BaseController
 {
     error404( ctx )
     {
