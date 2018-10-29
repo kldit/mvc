@@ -11,11 +11,13 @@ require('@kldit/util-is-string');
 require('@kldit/util-object-clone');
 require('@kldit/util-slug-to-capitalized');
 require('@kldit/util-slugify');
+require('@kldit/util-array-diff');
 
 
 module.exports = { 
     BaseModel: require('./lib/BaseModel'), 
     BaseController: require('./lib/BaseController'), 
     Application: require('./lib/Application'), 
-    server:require('@kldit/mvc/lib/server'),
-    log:require('@kldit/mvc/lib/log') };
+    server:require('./lib/server'),
+    log:require('./lib/log'),
+    util:require('./lib/util') };

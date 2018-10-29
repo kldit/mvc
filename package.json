@@ -33,6 +33,7 @@
   },
   "bundleDependencies": false,
   "dependencies": {
+    "@kldit/util-array-diff": "^1.0.0",
     "@kldit/util-boolean-parse": "^1.0.0",
     "@kldit/util-clean-special-chars": "^1.0.1",
     "@kldit/util-first-char-case": "^1.0.3",
