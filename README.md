@@ -45,7 +45,6 @@ mvc.server.setApplication( new MainApplication() );
 ### Run it
 ```bash
 $ node app.js
-> INFO: koa-response-time not installed
 > Setup  9.95 MB
 ```
 
@@ -56,7 +55,7 @@ $ curl localhost:3000
 ```
 
 ## Your first service
-Create a folder with the name you want, I'll call `MyService` and make the struct as below:
+Create a folder and name it as you want. I'll call `MyService`. Create a struct as below:
 ```bash
 MyService
 > controller
@@ -64,15 +63,15 @@ MyService
 > view
 ```
 
-Inside controller folder create a file called `Home.js`
+Inside the controller folder, create a file called `Home.js`
 ```javascript
 const mvc = require.main.require('@Kldit/mvc');
 
 module.exports = class Home extends mvc.BaseController
 {
-index(ctx) {
-ctx.body = 'Hello World!';
-}
+	index(ctx) {
+		ctx.body = 'Hello World!';
+	}
 }
 ```
 
@@ -80,12 +79,12 @@ Change your class `MainApplication` in the `app.js`:
 ```javascript
 class MainApplication extends mvc.Application
 {
-init( koa )
-{
-super.init( koa );
-// Put the name you want and point to the root service folder.
-this.loadService( 'my-service', './MyService' );
-}
+	init( koa )
+	{
+		super.init( koa );
+		// Put the name you want and point to the root service folder.
+		this.loadService( 'my-service', './MyService' );
+	}
 }
 ```
 
