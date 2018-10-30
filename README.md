@@ -225,3 +225,10 @@ You have to install ejs package in order to use it. `npm i ejs`
 Version is: <%= version[0]['version()'] %> and val: <%= version[0]['my value'] %>
 ```
 [More about views](extra/VIEW.md)
+
+## koa modules
+May you want to use some koa module (like `koa-static`). You can do as follow:
+```javascript
+// Add in `MainApplication::init(koa)` method.
+koa.use(mount("/storage", require('koa-static')("storage")));
+```
