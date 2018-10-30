@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Models - Documentation</title>
+
+    <script src="scripts/prettify/prettify.js"></script>
+    <script src="scripts/prettify/lang-css.js"></script>
+    <!--[if lt IE 9]>
+      <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <link type="text/css" rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
+    <link type="text/css" rel="stylesheet" href="styles/prettify-tomorrow.css">
+    <link type="text/css" rel="stylesheet" href="styles/jsdoc-default.css">
+</head>
+<body>
+
+<input type="checkbox" id="nav-trigger" class="nav-trigger" />
+<label for="nav-trigger" class="navicon-button x">
+  <div class="navicon"></div>
+</label>
+
+<label for="nav-trigger" class="overlay"></label>
+
+<nav>
+    <li class="nav-link nav-home-link"><a href="index.html">Home</a></li><li class="nav-heading">Tutorials</li><li class="nav-item"><a href="tutorial-Controllers.html">Controllers</a></li><li class="nav-item"><a href="tutorial-Models.html">Models</a></li><li class="nav-item"><a href="tutorial-Your first service.html">Your first service</a></li><li class="nav-heading">Classes</li><li class="nav-heading"><span class="nav-item-type type-class">C</span><span class="nav-item-name"><a href="Application.html">Application</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="Application.html#_masterReceive">_masterReceive</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="Application.html#_workerReceive">_workerReceive</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="Application.html#_workerSend">_workerSend</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="Application.html#getDbConnection">getDbConnection</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="Application.html#getModel">getModel</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="Application.html#getView">getView</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="Application.html#init">init</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="Application.html#loadControllers">loadControllers</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="Application.html#loadModels">loadModels</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="Application.html#loadService">loadService</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="Application.html#loadViews">loadViews</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="Application.html#prepareUri">prepareUri</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="Application.html#releaseDbConnection">releaseDbConnection</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="Application.html#run">run</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="Application.html#run404">run404</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="Application.html#runError">runError</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="Application.html#setDefaultService">setDefaultService</a></span></li><li class="nav-heading"><span class="nav-item-type type-class">C</span><span class="nav-item-name"><a href="BaseController.html">BaseController</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="BaseController.html#init">init</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="BaseController.html#loadModel">loadModel</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="BaseController.html#posHandle">posHandle</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="BaseController.html#preHandle">preHandle</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="BaseController.html#renderView">renderView</a></span></li><li class="nav-heading"><span class="nav-item-type type-class">C</span><span class="nav-item-name"><a href="BaseModel.html">BaseModel</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="BaseModel.html#.instanceMode">instanceMode</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="BaseModel.html#init">init</a></span></li><li class="nav-heading"><span class="nav-item-type type-class">C</span><span class="nav-item-name"><a href="Error.html">Error</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="Error.html#error404">error404</a></span></li><li class="nav-heading"><span class="nav-item-type type-class">C</span><span class="nav-item-name"><a href="Home.html">Home</a></span></li><li class="nav-heading">Modules</li><li class="nav-heading"><span class="nav-item-type type-module">M</span><span class="nav-item-name"><a href="module-log.html">log</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="module-log.html#~accessLog">accessLog</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="module-log.html#~customLog">customLog</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="module-log.html#~databaseLog">databaseLog</a></span></li><li class="nav-heading"><span class="nav-item-type type-module">M</span><span class="nav-item-name"><a href="module-mvc.html">mvc</a></span></li><li class="nav-heading"><span class="nav-item-type type-module">M</span><span class="nav-item-name"><a href="module-server.html">server</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="module-server.html#~setApplication">setApplication</a></span></li><li class="nav-heading"><span class="nav-item-type type-module">M</span><span class="nav-item-name"><a href="module-util.html">util</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="module-util.html#~customLog">customLog</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="module-util.html#~optionalRequire">optionalRequire</a></span></li>
+</nav>
+
+<div id="main">
+    
+    <h1 class="page-title">Models</h1>
+    
+
+    <section>
+
+<header>
+    
+</header>
+
+<article>
+    <h2>Routing</h2><p>When a request is made the application tries to find where it should go based on the services names, controller name and methods, all in this order.</p>
+<h3>Service name</h3><p>Considering you have two services, one is the default <code>whatever-name</code> and the second, <code>my-service</code>. The route for <code>request.path</code>will be as follow:</p>
+<pre class="prettyprint source lang-bash"><code>request.path: /my-service
+> service: my-service,
+> controller: home,
+> method: index
+> vars: []</code></pre><p>If the first <code>request.path</code> parameter is not a service, it will be considered a controller from the default service.</p>
+<pre class="prettyprint source lang-bash"><code>PATH: /my-another-service
+> service: whatever-name,
+> controller: my-another-service,
+> method: index
+> vars: []</code></pre><h3>Controller name</h3><p>Keeping on the same example but now we have two controllers for our default service. <code>Home</code> and <code>ContactUs</code>.</p>
+<pre class="prettyprint source lang-bash"><code>PATH: /contact-us
+> service: whatever-name,
+> controller: ContactUs,
+> method: index
+> vars: []</code></pre><p>Another example, those PATH will be the same results:</p>
+<pre class="prettyprint source lang-bash"><code>PATH: /
+PATH: /home
+PATH: /home/index
+> service: whatever-name,
+> controller: Home,
+> method: index
+> vars: []</code></pre><h3>Method name</h3><p>Now, our <code>Home</code> controller has <code>index</code> and <code>about</code> methods.</p>
+<pre class="prettyprint source lang-bash"><code>PATH: /about
+PATH: /home/about
+> service: whatever-name,
+> controller: Home,
+> method: about
+> vars: []</code></pre><p>Keep in mind, the search order for a name is: service, controller and then a method. In case you have <code>Home::contactUs</code> it will never be called from <code>/contact-us</code> request.</p>
+<pre class="prettyprint source lang-bash"><code>PATH: /contact-us
+> service: whatever-name,
+> controller: ContactUs,
+> method: index
+> vars: []</code></pre><h3>Method Any</h3><p>After all, you can add an <code>any</code> method to your controller in order to capture all the requests that does not have a specific method. Considering <code>ContactUs::any</code> is created.</p>
+<pre class="prettyprint source lang-bash"><code>PATH: /contact-us/example
+> service: whatever-name,
+> controller: ContactUs,
+> method: any
+> vars: []</code></pre><p>Be careful when using <code>Home::any</code>. More examples:</p>
+<pre class="prettyprint source lang-bash"><code>PATH: /contact-us/example/value1/value2
+> service: whatever-name,
+> controller: ContactUs,
+> method: any
+> vars: [&quot;value1&quot;, &quot;value2&quot;]
+
+PATH: /value1/value2
+> service: whatever-name,
+> controller: Home,
+> method: index
+> vars: [&quot;value1&quot;, &quot;value2&quot;]</code></pre><h2>Errors</h2><p>If you want to &quot;re-route&quot; a request to an error 404 you can call inside your controller method <code>this.app.run404(ctx)</code>. Or <code>this.app.runError(ctx)</code> for other cases.</p>
+<h2>preHandle</h2><p>You can extend this method in your controller to let or not a method be called.</p>
+<pre class="prettyprint source lang-javascript"><code>class Home extends BaseController
+{
+    preHandle(ctx)
+    {
+        ctx.body = &quot;NOOO!&quot;;
+        return false;
+    }
+
+    any(ctx)
+    {
+        ctx.body = &quot;any called&quot;;
+    }
+
+    index(ctx)
+    {
+        ctx.body = &quot;index called&quot;;
+    }
+
+    test(ctx)
+    {
+        ctx.body = &quot;test called&quot;;
+    }
+}</code></pre><p>Examples for requests:</p>
+<pre class="prettyprint source lang-bash"><code>PATH: /home/test
+> NOOO!
+
+PATH: /home/index
+> NOOO!
+
+PATH: /home/something-else
+> NOOO!</code></pre><p>You may use it to make a login session.</p>
+<h2>Error controller</h2><p>If a request is not found <code>Error::error404(ctx)</code> will be called. General error, <code>Error::error(ctx)</code>. You can create your own Error controller, if not, the application will use the one found in <code>@kldit/mvc/base/controller/Error</code>.</p>
+</article>
+
+</section>
+
+</div>
+
+<br class="clear">
+
+<footer>
+    Generated by <a href="https://github.com/jsdoc3/jsdoc">JSDoc 3.5.5</a> on Tue Oct 30 2018 18:09:15 GMT-0400 (-04) using the Minami theme.
+</footer>
+
+<script>prettyPrint();</script>
+<script src="scripts/linenumber.js"></script>
+</body>
+</html>

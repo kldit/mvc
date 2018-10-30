@@ -1,7 +1,8 @@
 /**
- * @author Orlando Leite
+ * Load all the classes and objects needed for Application, BaseModel and BaseController classes
  *
- * Application, BaseModel and BaseController classes
+ * @author Orlando Leite
+ * @module mvc
  */
 require('dotenv').config();
 require('@kldit/util-boolean-parse');
@@ -14,10 +15,21 @@ require('@kldit/util-slugify');
 require('@kldit/util-array-diff');
 
 
-module.exports = { 
+module.exports = {
+    /** @property {class} BaseModel class */
     BaseModel: require('./lib/BaseModel'), 
+
+    /** @property {class} BaseController class */
     BaseController: require('./lib/BaseController'), 
+
+    /** @property {class} Application class */
     Application: require('./lib/Application'), 
+
+    /** @property {object} server module */
     server:require('./lib/server'),
+
+    /** @property {object} log module */
     log:require('./lib/log'),
+
+    /** @property {object} util module */
     util:require('./lib/util') };

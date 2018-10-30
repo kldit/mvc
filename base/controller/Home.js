@@ -5,10 +5,12 @@ const mvc = require.main.require('@Kldit/mvc');
  *
  * Home class
  */
-module.exports = class Home extends mvc.BaseController
+class Home extends mvc.BaseController
 {
     index(ctx)
     {
         ctx.body = 'Kldit::MVC';
     }
 }
+
+module.exports = Home;

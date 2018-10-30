@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Your first service - Documentation</title>
+
+    <script src="scripts/prettify/prettify.js"></script>
+    <script src="scripts/prettify/lang-css.js"></script>
+    <!--[if lt IE 9]>
+      <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <link type="text/css" rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
+    <link type="text/css" rel="stylesheet" href="styles/prettify-tomorrow.css">
+    <link type="text/css" rel="stylesheet" href="styles/jsdoc-default.css">
+</head>
+<body>
+
+<input type="checkbox" id="nav-trigger" class="nav-trigger" />
+<label for="nav-trigger" class="navicon-button x">
+  <div class="navicon"></div>
+</label>
+
+<label for="nav-trigger" class="overlay"></label>
+
+<nav>
+    <li class="nav-link nav-home-link"><a href="index.html">Home</a></li><li class="nav-heading">Tutorials</li><li class="nav-item"><a href="tutorial-Cluster and threads.html">Cluster and threads</a></li><li class="nav-item"><a href="tutorial-Controllers.html">Controllers</a></li><li class="nav-item"><a href="tutorial-Your first service.html">Your first service</a></li><li class="nav-heading">Classes</li><li class="nav-heading"><span class="nav-item-type type-class">C</span><span class="nav-item-name"><a href="Application.html">Application</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="Application.html#_masterReceive">_masterReceive</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="Application.html#_workerReceive">_workerReceive</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="Application.html#_workerSend">_workerSend</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="Application.html#getDbConnection">getDbConnection</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="Application.html#getModel">getModel</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="Application.html#getView">getView</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="Application.html#init">init</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="Application.html#loadControllers">loadControllers</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="Application.html#loadModels">loadModels</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="Application.html#loadService">loadService</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="Application.html#loadViews">loadViews</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="Application.html#prepareUri">prepareUri</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="Application.html#releaseDbConnection">releaseDbConnection</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="Application.html#run">run</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="Application.html#run404">run404</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="Application.html#runError">runError</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="Application.html#setDefaultService">setDefaultService</a></span></li><li class="nav-heading"><span class="nav-item-type type-class">C</span><span class="nav-item-name"><a href="BaseController.html">BaseController</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="BaseController.html#init">init</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="BaseController.html#loadModel">loadModel</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="BaseController.html#posHandle">posHandle</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="BaseController.html#preHandle">preHandle</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="BaseController.html#renderView">renderView</a></span></li><li class="nav-heading"><span class="nav-item-type type-class">C</span><span class="nav-item-name"><a href="BaseModel.html">BaseModel</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="BaseModel.html#.instanceMode">instanceMode</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="BaseModel.html#init">init</a></span></li><li class="nav-heading"><span class="nav-item-type type-class">C</span><span class="nav-item-name"><a href="Error.html">Error</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="Error.html#error404">error404</a></span></li><li class="nav-heading"><span class="nav-item-type type-class">C</span><span class="nav-item-name"><a href="Home.html">Home</a></span></li><li class="nav-heading">Modules</li><li class="nav-heading"><span class="nav-item-type type-module">M</span><span class="nav-item-name"><a href="module-log.html">log</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="module-log.html#~accessLog">accessLog</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="module-log.html#~customLog">customLog</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="module-log.html#~databaseLog">databaseLog</a></span></li><li class="nav-heading"><span class="nav-item-type type-module">M</span><span class="nav-item-name"><a href="module-mvc.html">mvc</a></span></li><li class="nav-heading"><span class="nav-item-type type-module">M</span><span class="nav-item-name"><a href="module-server.html">server</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="module-server.html#~setApplication">setApplication</a></span></li><li class="nav-heading"><span class="nav-item-type type-module">M</span><span class="nav-item-name"><a href="module-util.html">util</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="module-util.html#~customLog">customLog</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="module-util.html#~optionalRequire">optionalRequire</a></span></li>
+</nav>
+
+<div id="main">
+    
+    <h1 class="page-title">Your first service</h1>
+    
+
+    <section>
+
+<header>
+    
+</header>
+
+<article>
+    <p>Create a folder and name it as you want. I'll call <code>MyService</code>. Create a struct as below:</p>
+<pre class="prettyprint source lang-bash"><code>MyService
+> controller
+> model
+> view</code></pre><p>Inside the controller folder, create a file called <code>Home.js</code></p>
+<pre class="prettyprint source lang-javascript"><code>const mvc = require.main.require('@Kldit/mvc');
+
+module.exports = class Home extends mvc.BaseController
+{
+    index(ctx) {
+        ctx.body = 'Hello World!';
+    }
+}</code></pre><p>Change your class <code>MainApplication</code> in the <code>app.js</code>:</p>
+<pre class="prettyprint source lang-javascript"><code>class MainApplication extends mvc.Application
+{
+    init( koa )
+    {
+        super.init( koa );
+        // Put the name you want and point to the root service folder.
+        this.loadService( 'my-service', './MyService' );
+    }
+}</code></pre><h3>Test it</h3><pre class="prettyprint source lang-bash"><code>$ curl localhost:3000/my-service
+> Hello World!</code></pre><p><a href="tutorial-Controllers.html">More about controllers</a></p>
+<h3>Default service</h3><p>Change <code>app.js</code></p>
+<pre class="prettyprint source lang-javascript"><code>this.setDefaultService( 'my-service', './MyService' );</code></pre><p>And test it. Now your app is at the root path.</p>
+<pre class="prettyprint source lang-bash"><code>$ curl localhost:3000
+> Hello World!</code></pre><h2>Your first Model</h2><p>You have to choose a database application. I'll use MySQL by installing <code>ext-mysql</code> extension.</p>
+<pre class="prettyprint source lang-bash"><code>$ npm install ext-mysql</code></pre><p>Add to the method <code>MainApplication::init</code> the code:</p>
+<pre class="prettyprint source lang-javascript"><code>// Require
+const MySQL = require('ext-mysql');
+
+MySQL.CREATE_POOL({
+    host: process.env.DB_HOSTNAME,
+    port: process.env.DB_PORT ? process.env.DB_PORT : 3306,
+    user: process.env.DB_USER,
+    password: process.env.DB_PASSWORD,
+    database: process.env.DB_DATABASE,
+    waitForConnections: true,
+    connectionLimit: 5,
+    queueLimit: 0
+});
+
+// It is good to have a log.
+MySQL.LOGGER = mvc.log.databaseLog;</code></pre><p>Add this two methods to <code>MainApplication</code> class.</p>
+<pre class="prettyprint source lang-javascript"><code>async getDbConnection()
+{
+    const conn = new MySQL();
+    return await conn.init();
+}
+
+releaseDbConnection( conn )
+{
+    conn.release();
+}</code></pre><p>Set properly all those .env values (<code>DB_HOSTNAME</code>, <code>DB_USER</code>, <code>DB_PASSWORD</code>, <code>DB_DATABASE</code>). Now, you are ready to go. Let's create our first model indeed.</p>
+<pre class="prettyprint source lang-javascript"><code>// ./model/HomeModel.js
+const { BaseModel } = require.main.require('@kldit/mvc');
+module.exports = class HomeModel extends BaseModel
+{
+    async version(ctx)
+    {
+        const conn = await ctx.db();
+        let result = null;
+        try
+        {
+            [result, fields] = await conn.execute(
+                `SELECT version(), ?`,
+                [&quot;my value&quot;]);
+        }
+        catch (err)
+        {
+            console.log(err);
+        }
+
+        return result;
+    }
+}</code></pre><p>And the <code>Home.js</code></p>
+<pre class="prettyprint source lang-javascript"><code>const mvc = require.main.require('@Kldit/mvc');
+
+module.exports = class Home extends mvc.BaseController
+{
+    init()
+    {
+        // Load the model you want
+        this.loadModel('Home');
+    }
+
+    async index(ctx)
+    {
+        // Call the method and show it in the body of the response.
+        ctx.body = await this.model.home.version(ctx);
+    }
+}</code></pre><h3>Test it</h3><pre class="prettyprint source lang-bash"><code>$ curl localhost:3000
+> [{&quot;version()&quot;:&quot;5.7.23&quot;,&quot;my value&quot;:&quot;my value&quot;}]</code></pre><p><a href="tutorial-Clusters and threads.html">More about models</a></p>
+<h2>Your first view</h2><p><strong>kldit::mvc</strong> supports mustache, ejs and vanilla js, although, it does not require any and you have to install as you wish.</p>
+<pre class="prettyprint source lang-javascript"><code>// HomeView.js (js version)
+module.exports = function( data )
+{
+    let version = data.version[0];
+    return `Version is: ${version['version()']} and val: ${version['my value']}`
+}</code></pre><p>Change <code>index(ctx)</code> to:</p>
+<pre class="prettyprint source lang-javascript"><code>ctx.body = this.renderView( 'Home', { version:await this.model.home.version(ctx) } );</code></pre><h3>Test it</h3><pre class="prettyprint source lang-bash"><code>$ curl localhost:3000
+Version is: 5.7.23 and val: my value</code></pre><h3>EJS Version</h3><p>You have to install ejs package in order to use it. <code>npm i ejs</code></p>
+<pre class="prettyprint source lang-javascript"><code>// HomeView.ejs (ejs version)
+Version is: &lt;%= version[0]['version()'] %> and val: &lt;%= version[0]['my value'] %></code></pre><p><a href="extra/VIEW.md">More about views</a></p>
+<h2>Koa modules</h2><p>May you want to use some koa module (like <code>koa-static</code>). You can do as follow:</p>
+<pre class="prettyprint source lang-javascript"><code>// Add in `MainApplication::init(koa)` method.
+koa.use(mount(&quot;/storage&quot;, require('koa-static')(&quot;storage&quot;)));</code></pre>
+</article>
+
+</section>
+
+</div>
+
+<br class="clear">
+
+<footer>
+    Generated by <a href="https://github.com/jsdoc3/jsdoc">JSDoc 3.5.5</a> on Tue Oct 30 2018 19:19:39 GMT-0400 (-04) using the Minami theme.
+</footer>
+
+<script>prettyPrint();</script>
+<script src="scripts/linenumber.js"></script>
+</body>
+</html>

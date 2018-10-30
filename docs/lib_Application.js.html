@@ -1,0 +1,601 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>lib/Application.js - Documentation</title>
+
+    <script src="scripts/prettify/prettify.js"></script>
+    <script src="scripts/prettify/lang-css.js"></script>
+    <!--[if lt IE 9]>
+      <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <link type="text/css" rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
+    <link type="text/css" rel="stylesheet" href="styles/prettify-tomorrow.css">
+    <link type="text/css" rel="stylesheet" href="styles/jsdoc-default.css">
+</head>
+<body>
+
+<input type="checkbox" id="nav-trigger" class="nav-trigger" />
+<label for="nav-trigger" class="navicon-button x">
+  <div class="navicon"></div>
+</label>
+
+<label for="nav-trigger" class="overlay"></label>
+
+<nav>
+    <li class="nav-link nav-home-link"><a href="index.html">Home</a></li><li class="nav-heading">Tutorials</li><li class="nav-item"><a href="tutorial-Cluster and threads.html">Cluster and threads</a></li><li class="nav-item"><a href="tutorial-Controllers.html">Controllers</a></li><li class="nav-item"><a href="tutorial-Your first service.html">Your first service</a></li><li class="nav-heading">Classes</li><li class="nav-heading"><span class="nav-item-type type-class">C</span><span class="nav-item-name"><a href="Application.html">Application</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="Application.html#_masterReceive">_masterReceive</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="Application.html#_workerReceive">_workerReceive</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="Application.html#_workerSend">_workerSend</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="Application.html#getDbConnection">getDbConnection</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="Application.html#getModel">getModel</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="Application.html#getView">getView</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="Application.html#init">init</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="Application.html#loadControllers">loadControllers</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="Application.html#loadModels">loadModels</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="Application.html#loadService">loadService</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="Application.html#loadViews">loadViews</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="Application.html#prepareUri">prepareUri</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="Application.html#releaseDbConnection">releaseDbConnection</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="Application.html#run">run</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="Application.html#run404">run404</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="Application.html#runError">runError</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="Application.html#setDefaultService">setDefaultService</a></span></li><li class="nav-heading"><span class="nav-item-type type-class">C</span><span class="nav-item-name"><a href="BaseController.html">BaseController</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="BaseController.html#init">init</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="BaseController.html#loadModel">loadModel</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="BaseController.html#posHandle">posHandle</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="BaseController.html#preHandle">preHandle</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="BaseController.html#renderView">renderView</a></span></li><li class="nav-heading"><span class="nav-item-type type-class">C</span><span class="nav-item-name"><a href="BaseModel.html">BaseModel</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="BaseModel.html#.instanceMode">instanceMode</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="BaseModel.html#init">init</a></span></li><li class="nav-heading"><span class="nav-item-type type-class">C</span><span class="nav-item-name"><a href="Error.html">Error</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="Error.html#error404">error404</a></span></li><li class="nav-heading"><span class="nav-item-type type-class">C</span><span class="nav-item-name"><a href="Home.html">Home</a></span></li><li class="nav-heading">Modules</li><li class="nav-heading"><span class="nav-item-type type-module">M</span><span class="nav-item-name"><a href="module-log.html">log</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="module-log.html#~accessLog">accessLog</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="module-log.html#~customLog">customLog</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="module-log.html#~databaseLog">databaseLog</a></span></li><li class="nav-heading"><span class="nav-item-type type-module">M</span><span class="nav-item-name"><a href="module-mvc.html">mvc</a></span></li><li class="nav-heading"><span class="nav-item-type type-module">M</span><span class="nav-item-name"><a href="module-server.html">server</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="module-server.html#~setApplication">setApplication</a></span></li><li class="nav-heading"><span class="nav-item-type type-module">M</span><span class="nav-item-name"><a href="module-util.html">util</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="module-util.html#~customLog">customLog</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="module-util.html#~optionalRequire">optionalRequire</a></span></li>
+</nav>
+
+<div id="main">
+    
+    <h1 class="page-title">lib/Application.js</h1>
+    
+
+    
+
+
+
+    
+    <section>
+        <article>
+            <pre class="prettyprint source linenums"><code>const fs = require("fs");
+const glob = require("glob-promise");
+const util = require('./util');
+const mustache = util.optionalRequire('mustache');
+const ejs = util.optionalRequire('ejs');
+const BaseModel = require('@kldit/mvc/lib/BaseModel');
+
+const path = require('path');
+const BASE_PATH = path.dirname(require.main.filename) + "/";
+
+let cluster;
+
+const CLUSTER_BOOL = Boolean.parse(process.env.CLUSTER);
+
+if(CLUSTER_BOOL)
+{
+	cluster = require('cluster');
+}
+
+/**
+ * @class Application
+ */
+class Application
+{
+	/**
+	 * It is called after `server.setApplication( application )` creates the server.
+	 * Use it to start your modules and services.
+	 * @param {Server} server - The koa service application.
+	 */
+	init(server)
+	{
+		this.services = {};
+		this.isMaster = !CLUSTER_BOOL || cluster.isMaster;
+
+		this.setDefaultService('base', __dirname + "/../" + 'base');
+	}
+
+	/**
+	 * Internal use. It is meant to handle the communication between master and slave clusters.
+	 * @access private
+	 * @param {Object} msg - Message object.
+	 * @param {Function} resolve - Callback.
+	 * @param {Function} reject - Callback.
+	 */
+	_workerSend(msg, resolve, reject)
+	{
+		msg.id = ++this.msgId;
+		this.msgObjs[msg.id] = [resolve, reject];
+		process.send(msg);
+	}
+
+	/**
+	 * Internal use. It is meant to handle the communication between master and slave clusters.
+	 * @access private
+	 * @param {Object} msg - Message object.
+	 */
+	_workerReceive(msg)
+	{
+		let [resolve, reject] = this.msgObjs[msg.id];
+
+		if(msg.error)
+		{
+			reject(msg.error);
+		}
+		else
+		{
+			resolve(msg.result);
+		}
+
+		delete this.msgObjs[msg.id];
+	}
+
+	/**
+	 * Internal use. It is meant to handle the communication between master and slave clusters.
+	 * @access private
+	 * @param {Object} worker - Cluster object.
+	 * @param {Object} msg - Message object.
+	 */
+	async _masterReceive(worker, msg)
+	{
+		try
+		{
+			let service = this.services[msg.service];
+			let args = msg.args.clone();
+
+			let self = this;
+			args.db = async function ()
+			{
+				if(!this._db)
+				{
+					this._db = await theApp.getDbConnection();
+				}
+
+				return this._db;
+			}
+
+			msg.result = await service[msg.method].apply(service, msg.args);
+
+			if( args._db ) this.releaseDbConnection( args._db );
+		}
+		catch (err)
+		{
+			msg.error = err;
+		}
+
+		return msg;
+	}
+
+	/**
+	 * Set the default (root) service.
+	 * @param {string} name - The name of the service.
+	 * @param {Object} path - The path to find the service.
+	 */
+	setDefaultService(name, path = BASE_PATH + name)
+	{
+		this.loadService(name, path);
+		this.defaultApp = name;
+	}
+
+	/**
+	 * Load a service at the name you gave to it.
+	 * @param {string} name - The name of the service.
+	 * @param {Object} path - The path to find the service.
+	 */
+	async loadService(name, path = BASE_PATH + name)
+	{
+		try
+		{
+			if(!path) path = name;
+
+			this.services[name] = { model: {}, controller: {}, view: {} };
+
+			await this.loadControllers(name, path);
+			await this.loadModels(name, path);
+			this.loadViews(name, path);
+
+			for(var i in this.services[name].controller)
+			{
+				var controller = this.services[name].controller[i];
+				controller.init();
+			}
+
+			for(var i in this.services[name].model)
+			{
+				var model = this.services[name].model[i];
+				if(model.init) model.init();
+			}
+
+			let self = this;
+			if(fs.existsSync(path + "/view"))
+			{
+				fs.watch(path + "/view", { recursive: true }, function (event, filename)
+				{
+					console.log("Reloading Views");
+					self.loadViews(name, path);
+				});
+			}
+		}
+		catch (err)
+		{
+			console.error(err);
+		}
+	}
+
+	/**
+	 * Load controllers. Used internally.
+	 * @access protected
+	 * @param {string} name - The name of the service.
+	 * @param {Object} path - The path to find the service.
+	 */
+	async loadControllers(name, path)
+	{
+		var files = await glob(path + "/controller/*.js");
+		for(var i in files)
+		{
+			var file = files[i];
+			var temp = file.split('/').pop().split('.js')[0];
+			this.services[name].controller[temp] = new(require.main.require(file))(this, name);
+		}
+	}
+
+	/**
+	 * Load models. Used internally.
+	 * @access protected
+	 * @param {string} name - The name of the service.
+	 * @param {Object} path - The path to find the service.
+	 */
+	async loadModels(name, path)
+	{
+		let files = await glob(path + "/model/*Model.js")
+		for(let i in files)
+		{
+			let file = files[i];
+			let temp = file.split('/').pop().split('Model.js')[0];
+			let classs = require.main.require(file);
+
+			if(!CLUSTER_BOOL ||
+				this.isMaster &amp;&amp; classs.instanceMode() == BaseModel.MASTER_CLUSTER ||
+				!this.isMaster &amp;&amp; classs.instanceMode() == BaseModel.SLAVE_CLUSTER)
+			{
+				this.services[name].model[temp] = new(classs)(this, name);
+			}
+			else if(!this.isMaster &amp;&amp; classs.instanceMode() == BaseModel.MASTER_CLUSTER)
+			{
+				this.msgId = 0;
+				this.msgObjs = {};
+				let self = this;
+
+				// console.log( util.getClassMethods( service.prototype ) );
+				let methods = Object.getOwnPropertyNames(classs.prototype);
+
+				let service = {};
+				for(let m of methods)
+				{
+					if(m != "init")
+					{
+						service[m] = async function ()
+						{
+							let result = await (new Promise(function (resolve, reject)
+							{
+								let msg = { service: temp, method: m, args: arguments };
+								self._workerSend(msg, resolve, reject);
+							}));
+
+							return result;
+						}
+					}
+				}
+
+				this.services[name].model[temp] = service;
+			}
+		}
+	}
+
+	/**
+	 * Load views. Used internally.
+	 * @access protected
+	 * @param {string} name - The name of the service.
+	 * @param {Object} path - The path to find the service.
+	 */
+	loadViews(name, path)
+	{
+		var self = this;
+		glob(path + "/view/*", function (er, files)
+		{
+			for(var i in files)
+			{
+				var file = files[i];
+				var part = file.split('/').pop().split('View.');
+				var ext = part.pop();
+				var temp = part.join('View.');
+
+				if(ext == 'mst')
+				{
+					var loaded = fs.readFileSync(file, process.env.ENCODE);
+
+					if(!mustache)
+						throw new Error('Error, Mustache not installed, document: ' + loaded);
+
+					mustache.parse(loaded);
+					self.services[name].view[temp] = [ext, loaded];
+				}
+				else if(ext == 'ejs')
+				{
+					if(!ejs)
+						throw new Error('Error, ejs not installed, document: ' + loaded);
+
+					var loaded = fs.readFileSync(file, process.env.ENCODE);
+					self.services[name].view[temp] = [ext, ejs.compile(loaded)];
+				}
+				else if(ext == 'js')
+				{
+					var r = file.split('.');
+					r.pop();
+					var loaded = require.main.require(r.join('.'));
+					self.services[name].view[temp] = [ext, loaded];
+				}
+			}
+		});
+	}
+
+	/**
+	 * Prepare the URI. Used internally
+	 * @access protected
+	 * @param {Object} ctx - Koa context object.
+	 */
+	prepareUri(ctx)
+	{
+		let request = ctx.request.path.substring(1).split(/[\\/]/);
+		let uri = null;
+
+		// Empty URI
+		if(request.length == 1 &amp;&amp; request[0] == '')
+		{
+			uri = {
+				app: this.defaultApp,
+				controller: 'home',
+				method: 'index',
+				vars: []
+			};
+		}
+		else
+		{
+			let app = this.defaultApp;
+
+			// It is a not default app
+			if(this.services[request[0]] != null)
+			{
+				app = request[0];
+				request = request.splice(1);
+			}
+			console.log(app, request)
+			uri = {
+				app: app,
+				controller: request.length &lt;= 1 &amp;&amp; !request[0] ? 'home' : request[0],
+				method: request.length > 1 &amp;&amp; request[1] != '' ? request[1] : 'index',
+				vars: request.splice(2)
+			};
+		}
+
+		ctx.uri = uri;
+
+		/*
+
+
+		var uri = ;
+
+		uri['vars'] = request.splice(2);
+
+		ctx.uri = uri;
+
+		if(ctx.uri.controller == process.env.CMS_PATH)
+			{
+				ctx.uri.controller = ctx.uri.method;
+				ctx.uri.method = ctx.uri.vars[0];
+				ctx.uri.vars = ctx.uri.vars.splice(1);
+
+				if(!ctx.uri.method) ctx.uri.method = 'index';
+
+				name = ctx.uri.controller.slugify();
+				target = this.services.base.controller[name];
+
+				// console.log( util.inspect( ctx.uri, null, false, true ) );
+			}*/
+	}
+
+	/**
+	 * Run "the uri". Look for the app, controller and method. Used internally
+	 * @access protected
+	 * @param {Object} ctx - Koa context object.
+	 */
+	async run(ctx)
+	{
+		try
+		{
+			let name = ctx.uri.controller.slugToCapitalized();
+			let target = null;
+
+			// Look for the app
+			target = this.services[ctx.uri.app].controller[name];
+			
+			// Look for base app
+			if(target == null) target = this.services.base.controller[name];
+
+			// Look for home (if it has method for it or accepts any )
+			if(target == null)
+			{
+				target = this.services[ctx.uri.app].controller.Home;
+
+				if(target == null)
+				{
+					target = this.run404(ctx);
+				}
+				else if(target[ctx.uri.controller] != null)
+				{
+					ctx.uri.vars.unshift(ctx.uri.method);
+					ctx.uri.method = ctx.uri.controller;
+					ctx.uri.controller = 'home';
+				}
+				else if(target.any != null)
+				{
+					ctx.uri.vars.unshift(ctx.uri.controller);
+					ctx.uri.method = 'any';
+					ctx.uri.controller = 'home';
+				}
+				else
+				{
+					target = this.run404(ctx);
+				}
+			}
+
+			if(target)
+			{
+				if(await target.preHandle(ctx))
+				{
+					var method = ctx.uri.method.slugToCapitalized().firstCharToLowerCase();
+
+					if(target[method])
+					{
+						await (target[method])(ctx);
+					}
+					else
+					{
+						if(target.index)
+						{
+							ctx.uri.vars.unshift(ctx.uri.method);
+							ctx.uri.method = 'index';
+
+							await target.index(ctx);
+						}
+						else if(target.any)
+						{
+							await target.any(ctx);
+						}
+						else
+						{
+							target = this.run404(ctx);
+							await target.index(ctx);
+						}
+					}
+
+					await target.posHandle(ctx);
+					ctx.response.send();
+				}
+				else
+				{
+					ctx.response.send();
+				}
+			}
+		}
+		catch (err)
+		{
+			console.error(err);
+
+			ctx.serverError = err;
+			await this.runError(ctx);
+		}
+	}
+
+	/**
+	 * In case of 404, call it.
+	 * @param {Object} ctx - Koa context object.
+	 */
+	run404(ctx)
+	{
+		// Look for default app
+		var target = this.services[this.defaultApp].controller.Error;
+
+		// Look for base app
+		if(target == null) target = this.services.base.controller.Error;
+
+		ctx.uri.method = 'error404';
+
+		return target;
+	}
+
+	/**
+	 * In case of any error (may 500), call it.
+	 * @param {Object} ctx - Koa context object.
+	 */
+	async runError(ctx)
+	{
+		// Look for the app
+		let target = this.services[ctx.uri.app].controller.Error;
+
+		// Look for default app
+		if( target == null ) target = this.services[this.defaultApp].controller.Error;
+
+		// Look for base app
+		if(target == null) target = this.services.base.controller.Error;
+
+		if(await target.preHandle(ctx))
+		{
+			await target.error(ctx);
+			// console.log("runError");
+			await target.posHandle(ctx);
+			ctx.response.send();
+		}
+		else
+		{
+			ctx.response.send();
+		}
+	}
+
+	/**
+	 * Used internally when you call `loadModel` in your controller.
+	 * @access protected
+	 * @param {string} name - The model`s name.
+	 * @param {string} service - The service`s name.
+	 */
+	getModel(name, service = this.defaultApp)
+	{
+		// Look for the app
+		// console.log( name, service );
+		var target = this.services[service].model[name];
+
+		// Look for base app
+		if(target == null) target = this.services.base.model[name];
+
+		return target;
+	}
+
+	/**
+	 * Used internally when you call `renderView` in your controller.
+	 * @access protected
+	 * @param {string} name - The model`s name.
+	 * @param {string} service - The service`s name.
+	 */
+	getView(name, service = this.defaultApp)
+	{
+		// Look for default app
+		var target = this.services[service].view[name];
+
+		// Look for base app
+		if(target == null) target = this.services.base.view[name];
+
+		return target;
+	}
+
+	/**
+	 * In case you are using database. You should override this method to get a connection.
+	 * @access protected
+	 * @returns {Object} A database connection.
+	 */
+	getDbConnection()
+	{
+		return null;
+	}
+
+	/**
+	 * In case you are using database. You should override this method to release a connection.
+	 * @access protected
+	 * @param {Object} A database connection to be released.
+	 */
+	releaseDbConnection( conn )
+	{
+
+	}
+}
+
+module.exports = Application;
+</code></pre>
+        </article>
+    </section>
+
+
+
+
+</div>
+
+<br class="clear">
+
+<footer>
+    Generated by <a href="https://github.com/jsdoc3/jsdoc">JSDoc 3.5.5</a> on Tue Oct 30 2018 19:19:39 GMT-0400 (-04) using the Minami theme.
+</footer>
+
+<script>prettyPrint();</script>
+<script src="scripts/linenumber.js"></script>
+</body>
+</html>
