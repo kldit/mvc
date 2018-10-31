@@ -1,10 +1,11 @@
 {
   "name": "@kldit/mvc",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "A small MVC Framework powered by koa",
   "main": "index.js",
   "scripts": {
-    "test": "jest"
+    "test": "jest",
+    "doc": "jsdoc -c .jsdoc.json --verbose"
   },
   "repository": {
     "type": "git",
