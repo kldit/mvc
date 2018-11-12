@@ -25,6 +25,9 @@ module.exports = {
     /** @property {class} Application class */
     Application: require('./lib/Application'), 
 
+    /** @property {class} UrlMapApplication class */
+    UrlMapApplication: require('./lib/UrlMapApplication'), 
+
     /** @property {object} server module */
     server:require('./lib/server'),
 
