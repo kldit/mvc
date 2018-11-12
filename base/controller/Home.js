@@ -1,4 +1,4 @@
-const mvc = require.main.require('@Kldit/mvc');
+const mvc = require.main.require('@kldit/mvc');
 
 /**
  * @author Orlando Leite
